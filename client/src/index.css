@@ -22,6 +22,18 @@ body {
     sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body {
+    scroll-behavior: auto;
+  }
+}
+
 a {
   color: inherit;
 }
