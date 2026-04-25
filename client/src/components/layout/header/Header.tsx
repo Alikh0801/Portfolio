@@ -14,7 +14,7 @@ export function Header() {
         <a className="siteHeader__brand" href="#top" aria-label="Home">
           <span className="siteHeader__brandMark" aria-hidden="true" />
           <span className="siteHeader__brandName">
-            Ali<span className="siteHeader__brandAccent">Portfolio</span>
+            Ali<span className="siteHeader__brandAccent">Kheirkheberli</span>
           </span>
         </a>
         <nav className="siteHeader__nav" aria-label="Primary">
