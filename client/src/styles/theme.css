@@ -1,0 +1,14 @@
+:root {
+  --bg: #0b0b0c; /* qara */
+  --panel: #111114; /* tünd panel */
+  --text: #f3f3f4; /* əsas yazı */
+  --muted: #b7b7bb; /* ikinci yazı */
+  --accent: #c2410c; /* tünd portağal (orange-700) */
+  --accent-2: #ff7a1a; /* hover üçün bir az canlı */
+  --border: rgba(255, 255, 255, 0.08);
+
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+
+  --container: 1120px;
+}

@@ -1,0 +1,18 @@
+.home {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 28px 18px;
+}
+
+.home__section {
+  padding: 48px 0;
+}
+
+.home__title {
+  margin: 0;
+}
+
+.home__text {
+  color: var(--muted);
+  margin-top: 10px;
+}
