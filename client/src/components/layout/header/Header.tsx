@@ -1,4 +1,5 @@
 import "./Header.css";
+import { useEffect, useState } from "react";
 
 type NavItem = { label: string; href: string };
 
@@ -46,6 +47,22 @@ function smoothScrollToHash(hash: string) {
 }
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
+
+  const onNavClick = (hash: string) => {
+    smoothScrollToHash(hash);
+    setMenuOpen(false);
+  };
+
   return (
     <header className="siteHeader">
       <div className="siteHeader__inner">
@@ -55,7 +72,7 @@ export function Header() {
           aria-label="Home"
           onClick={(e) => {
             e.preventDefault();
-            smoothScrollToHash("#top");
+            onNavClick("#top");
           }}
         >
           <span className="siteHeader__brandMark" aria-hidden="true" />
@@ -71,7 +88,7 @@ export function Header() {
               href={item.href}
               onClick={(e) => {
                 e.preventDefault();
-                smoothScrollToHash(item.href);
+                onNavClick(item.href);
               }}
             >
               {item.label}
@@ -84,11 +101,65 @@ export function Header() {
             href="#about"
             onClick={(e) => {
               e.preventDefault();
-              smoothScrollToHash("#about");
+              onNavClick("#about");
             }}
           >
             Let’s talk
           </a>
+
+          <button
+            type="button"
+            className="siteHeader__menuBtn"
+            aria-label="Open menu"
+            aria-haspopup="dialog"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            <span className="siteHeader__menuIcon" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`siteHeader__mobileOverlay ${
+          menuOpen ? "siteHeader__mobileOverlay--open" : ""
+        }`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile menu"
+        onClick={() => setMenuOpen(false)}
+      >
+        <div
+          className="siteHeader__mobilePanel"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="siteHeader__mobileTop">
+            <span className="siteHeader__mobileTitle">Menu</span>
+            <button
+              type="button"
+              className="siteHeader__mobileClose"
+              aria-label="Close menu"
+              onClick={() => setMenuOpen(false)}
+            >
+              ✕
+            </button>
+          </div>
+
+          <nav className="siteHeader__mobileNav" aria-label="Mobile primary">
+            {nav.map((item) => (
+              <a
+                key={item.href}
+                className="siteHeader__mobileLink"
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavClick(item.href);
+                }}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
         </div>
       </div>
     </header>
