@@ -69,7 +69,7 @@
 }
 
 .projectCard__body {
-  padding: 14px 14px 16px;
+  padding: 12px 12px 14px;
   display: grid;
   gap: 12px;
 }
@@ -171,8 +171,8 @@
   display: grid;
   grid-template-columns: 1.1fr 1.4fr;
   gap: 22px;
-  padding: 30px;
-  padding-inline: 46px;
+  padding: 20px;
+  padding-inline: 40px;
   border: 1px solid var(--border);
   border-radius: 18px;
   background: rgba(17, 17, 20, 0.32);
@@ -180,7 +180,7 @@
 }
 
 .projectSection__media {
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   aspect-ratio: 16 / 10;
 }
@@ -244,12 +244,12 @@
 .projectSection__desc {
   margin: 0;
   color: rgba(243, 243, 244, 0.82);
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .projectSection__workTitle {
   margin: 0 0 8px;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(243, 243, 244, 0.7);
@@ -257,7 +257,7 @@
 
 .projectSection__list {
   margin: 0;
-  padding-left: 18px;
+  padding-left: 16px;
   color: rgba(243, 243, 244, 0.82);
   display: grid;
   gap: 6px;
@@ -269,7 +269,7 @@
 
 /* Swiper theme tweak (dark) */
 .projectsSwiper .swiper {
-  padding-bottom: 34px; /* room for pagination */
+  padding-bottom: 32px; /* room for pagination */
 }
 
 .projectsSwiper .swiper-wrapper {
@@ -298,7 +298,7 @@
 
 .projectsSwiper .swiper-pagination-bullet {
   background: rgba(243, 243, 244, 0.35);
-  opacity: 1;
+  opacity: 0, 7;
 }
 
 .projectsSwiper .swiper-pagination-bullet-active {
@@ -343,7 +343,7 @@
 
 .projectSection__media {
   aspect-ratio: 16 / 9;
-  border-radius: 16px;
+  border-radius: 14px;
   position: relative;
 }
 

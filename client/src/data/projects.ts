@@ -52,27 +52,35 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Internal Dashboard",
-    imageUrl:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
-    siteUrl: "https://example.com",
+    title: "Wolfservice",
+    imageUrl: "/projects/wolf.png",
+    siteUrl: "https://wolfhibridservice.com/",
     type: "company",
     companyName: "Alievs Space",
     description:
-      "Analytics dashboard for internal reporting with role-based access.",
+      "Wolfservice is a multilingual Slovak car repair platform with public booking and an integrated admin dashboard.",
     responsibilities: [
-      "Built reusable table and filter components (search, sort, pagination).",
-      "Integrated REST endpoints and handled loading/error states.",
-      "Improved performance by memoizing heavy components and reducing re-renders.",
+      "Implemented full i18n support with language-specific routing and a dynamic switcher to ensure seamless navigation and SEO indexing across all locales.",
+      "Extended the dashboard with type-safe localized fields and API-driven forms to manage translated service catalogs and site settings.",
+      "Optimized SEO metadata and sitemaps for multi-language support while refining UI components and legal copy for technical consistency.",
     ],
-    technologies: ["React", "REST API", "Charts", "Auth"],
+    technologies: [
+      "React",
+      "REST API",
+      "TypeScript",
+      "React Router",
+      "Tailwind CSS (v4, @tailwindcss/vite)",
+      "Axios",
+      "i18next-browser-languagedetector",
+      "ESLint",
+    ],
   },
   {
-    title: "Portfolio v2",
-    imageUrl:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1400&q=80",
-    siteUrl: "https://example.com",
-    type: "personal",
+    title: "TuranSK Logistics",
+    imageUrl: "/projects/turansk.png",
+    siteUrl: "https://turansk.com/en",
+    type: "company",
+    companyName: "Alievs Space",
     description:
       "Analytics dashboard for internal reporting with role-based access.",
     responsibilities: [
