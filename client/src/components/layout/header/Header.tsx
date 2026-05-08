@@ -96,17 +96,6 @@ export function Header() {
           ))}
         </nav>
         <div className="siteHeader__actions">
-          <a
-            className="siteHeader__cta"
-            href="#about"
-            onClick={(e) => {
-              e.preventDefault();
-              onNavClick("#about");
-            }}
-          >
-            Let’s talk
-          </a>
-
           <button
             type="button"
             className="siteHeader__menuBtn"

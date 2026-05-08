@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     title: "A&Z Perfumery",
     imageUrl: "/projects/az.png",
-    siteUrl: "https://azperfumery.vercel.app/",
+    siteUrl: "https://azperfumery.az/",
     type: "personal",
     description:
       "A&Z Perfumery is a full‑stack perfume e‑commerce web app for browsing products and viewing detailed listings.",

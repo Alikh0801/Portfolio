@@ -21,7 +21,6 @@
   gap: 12px;
   text-decoration: none;
   color: var(--text);
-  min-width: 190px;
 }
 
 .siteHeader__brandMark {
@@ -100,11 +99,16 @@
 }
 
 .siteHeader__actions {
-  display: flex;
+  display: none;
   justify-content: flex-end;
-  min-width: 190px;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .siteHeader__actions {
+    display: flex;
+  }
 }
 
 .siteHeader__cta {
@@ -140,10 +144,6 @@
 @media (max-width: 760px) {
   .siteHeader__nav {
     display: none;
-  }
-
-  .siteHeader__actions {
-    min-width: auto;
   }
 
   .siteHeader__cta {
