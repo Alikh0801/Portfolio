@@ -9,7 +9,7 @@ export type Education = {
   period: string;
   degree: string;
   school: string;
-  description: string;
+  description?: string;
 };
 
 export type Skill = {
@@ -44,38 +44,56 @@ export const aboutProfile: AboutProfile = {
 
 export const experiences: Experience[] = [
   {
-    period: "2024 — Present",
-    role: "Full-stack Developer",
+    period: "2026.01 — Present",
+    role: "Frontend Developer",
     company: "Alievs Space",
     description:
-      "Building production web apps with React/Next.js and Node.js. Focus on scalable architecture, clean UI, and performance optimization.",
+      "Building production web and mobile apps with React, React Native, and TypeScript. Focus on scalable architecture, clean UI, and performance optimization.",
   },
   {
-    period: "2023 — 2024",
-    role: "Frontend Developer",
-    company: "Freelance",
+    period: "2025.11 — 2026.02",
+    role: "Full Stack Developer",
+    company: "1kod.az",
     description:
-      "Delivered responsive client websites and dashboards using React, TypeScript, and modern CSS. Implemented multilingual support and SEO optimization.",
+      "Proven expertise in resolving complex UI/UX challenges, optimizing web performance, and managing end-to-end deployment workflows to ensure scalable and high-quality digital products.",
+  },
+  {
+    period: "2025.10 — 2026.01",
+    role: "Frontend instructor",
+    company: "Jet Academy",
+    description:
+      "Providing technical mentorship to new students at Jet Academy, facilitating post-lecture support to bridge knowledge gaps and accelerate their learning curve in web development.",
   },
 ];
 
 export const education: Education[] = [
   {
+    period: "2025 — 2026",
+    degree: "Full Stack Developer",
+    school: "Jet Academy",
+  },
+  {
+    period: "2019 — 2020",
+    degree: "Javascript/ES6 Developer",
+    school: "İstanbul İşletme Enstitüsü",
+  },
+  {
     period: "2017 — 2021",
     degree: "Sports theory and methodology — Bachelor",
     school: "Azerbaijan State Academy of Physical Education and Sport",
-    description:
-      "Programming fundamentals, algorithms, databases, computer networks, and software engineering principles.",
   },
 ];
 
 export const skills: Skill[] = [
-  { name: "React / Next.js", level: 95 },
+  { name: "React", level: 95 },
+  { name: "React Native", level: 85 },
+  { name: "Redux Toolkit", level: 80 },
   { name: "Node.js / Express", level: 95 },
-  { name: "TypeScript", level: 70 },
+  { name: "TypeScript", level: 75 },
   { name: "MongoDB", level: 95 },
-  { name: "Github / Git", level: 55 },
-  { name: "UI / UX Design", level: 65 },
+  { name: "Github / Git", level: 90 },
+  { name: "UI / UX Design", level: 70 },
+  { name: "Web Deployment & Hosting", level: 95 },
 ];
 
 export const languages: Language[] = [

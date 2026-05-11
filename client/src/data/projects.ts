@@ -82,12 +82,14 @@ export const projects: Project[] = [
     type: "company",
     companyName: "Alievs Space",
     description:
-      "Analytics dashboard for internal reporting with role-based access.",
+      "A comprehensive web platform for a leading European logistics service provider, designed to streamline international shipping operations and cargo management.",
     responsibilities: [
-      "Built reusable table and filter components (search, sort, pagination).",
-      "Integrated REST endpoints and handled loading/error states.",
-      "Improved performance by memoizing heavy components and reducing re-renders.",
+      "Developed a secure Admin Authentication system with integrated login flows and protected route logic.",
+      "Architected the Admin Dashboard by integrating RESTful APIs to handle dynamic service data and real-time logistics tracking.",
+      "Resolved UI inconsistencies and optimized layout components on the Services page to ensure a seamless user experience.",
+      "Implemented high-performance interactive elements, including custom Swiper.js integrations for dynamic content display.",
+      "Optimized application state management to ensure fluid transitions between complex data views.",
     ],
-    technologies: ["UI/UX", "Responsive", "SEO"],
+    technologies: ["React", "TypeScript", "REST API", "Tailwind CSS"],
   },
 ];
