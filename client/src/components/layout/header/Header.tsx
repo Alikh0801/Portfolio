@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 type NavItem = { label: string; href: string };
 
 const nav: NavItem[] = [
-  { label: "Products", href: "#products" },
+  { label: "Projects", href: "#products" },
   { label: "About me", href: "#about" },
 ];
 

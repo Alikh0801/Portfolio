@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { projects } from "../../data/projects";
 import {
   aboutProfile,
@@ -9,7 +10,16 @@ import {
 import "./Home.css";
 import { Hero } from "./sections/hero";
 
+const INITIAL_VISIBLE_PROJECTS = 3;
+
 export function Home() {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const hasMoreProjects = projects.length > INITIAL_VISIBLE_PROJECTS;
+  const visibleProjects = showAllProjects
+    ? projects
+    : projects.slice(0, INITIAL_VISIBLE_PROJECTS);
+  const hiddenCount = projects.length - INITIAL_VISIBLE_PROJECTS;
+
   return (
     <div>
       <Hero />
@@ -38,7 +48,7 @@ export function Home() {
           </div>
 
           <div className="projectsList">
-            {projects.map((p, index) => (
+            {visibleProjects.map((p, index) => (
               <article key={p.title} className="projectCase">
                 <div className="projectCase__top">
                   <div className="projectCase__intro">
@@ -108,6 +118,19 @@ export function Home() {
               </article>
             ))}
           </div>
+
+          {hasMoreProjects && (
+            <button
+              type="button"
+              className="projectsMore"
+              onClick={() => setShowAllProjects((v) => !v)}
+              aria-expanded={showAllProjects}
+            >
+              {showAllProjects
+                ? "Show less"
+                : `Show more (${hiddenCount} more)`}
+            </button>
+          )}
         </section>
 
         <section id="about" className="home__section">

@@ -34,7 +34,7 @@ export type AboutProfile = {
 
 export const aboutProfile: AboutProfile = {
   initials: "AK",
-  avatarUrl: "/profile/me.jpg",
+  avatarUrl: "/profile/me1.png",
   name: "Ali Kheirkheberli",
   role: "Full-stack Developer",
   location: "Baku, Azerbaijan",

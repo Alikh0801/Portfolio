@@ -55,6 +55,36 @@
   gap: 16px;
 }
 
+.projectsMore {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 122, 26, 0.45);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 122, 26, 0.16),
+    rgba(194, 65, 12, 0.08)
+  );
+  color: var(--text);
+  font-weight: 850;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
+  transition:
+    transform 85ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.projectsMore:hover {
+  border-color: rgba(255, 122, 26, 0.68);
+}
+
+.projectsMore:active {
+  transform: translateY(1px) scale(0.97);
+}
+
 .projectCase {
   position: relative;
   overflow: hidden;

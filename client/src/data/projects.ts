@@ -92,4 +92,41 @@ export const projects: Project[] = [
     ],
     technologies: ["React", "TypeScript", "REST API", "Tailwind CSS"],
   },
+  {
+    title: "Dabi Cars",
+    imageUrl: "#",
+    siteUrl: "https://dabicars.com/",
+    type: "company",
+    companyName: "Alievs Space",
+    description:
+      "Dabi Cars is a rent-a-car web platform where users can browse available vehicles, compare options, and explore rental details through a clean, modern interface.",
+    responsibilities: [
+      "Implemented search functionality to help users quickly filter and find vehicles based on their needs.",
+      "Built dark/light mode support with persistent theme preference and consistent styling across all UI components.",
+      "Fixed card layout and responsive design issues on mobile to ensure a polished and user-friendly browsing experience.",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "React Router",
+      "REST API",
+      "Axios",
+      "Vite",
+    ],
+  },
+  {
+    title: "Orskin Clinic",
+    imageUrl: "#",
+    siteUrl: "https://orskin.ae/",
+    type: "company",
+    companyName: "Alievs Space",
+    description:
+      "Orskin Clinic is a professional clinic website for a skincare and aesthetic care brand, helping visitors explore treatments, meet the team, and find trusted information before booking.",
+    responsibilities: [
+      "Designed and developed the About Us, Our Team, Services, and FAQ pages with a clean, brand-aligned layout.",
+      "Structured page content and UI components to present clinic services, staff profiles, and common questions clearly.",
+      "Ensured full mobile responsiveness across all sections for a seamless experience on phones and tablets.",
+    ],
+    technologies: ["React", "React Router", "Tailwind CSS"],
+  },
 ];
