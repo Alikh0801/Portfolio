@@ -88,11 +88,14 @@ export const skills: Skill[] = [
   { name: "React", level: 95 },
   { name: "React Native", level: 85 },
   { name: "Redux Toolkit", level: 80 },
-  { name: "Node.js / Express", level: 95 },
+  { name: "Node.js / Express", level: 85 },
+  { name: "NestJs", level: 80 },
   { name: "TypeScript", level: 75 },
-  { name: "MongoDB", level: 95 },
+  { name: "MongoDB", level: 90 },
+  { name: "Supabase", level: 80 },
+  { name: "Postgresql", level: 70 },
   { name: "Github / Git", level: 90 },
-  { name: "UI / UX Design", level: 70 },
+  { name: "UI / UX Design", level: 80 },
   { name: "Web Deployment & Hosting", level: 95 },
 ];
 

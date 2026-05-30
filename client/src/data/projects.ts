@@ -14,6 +14,23 @@ export type Project = {
 // Replace these examples with your real projects.
 export const projects: Project[] = [
   {
+    title: "Repost.az",
+    imageUrl: "#",
+    siteUrl: "https://repost.az/",
+    type: "personal",
+    description:
+      "RePost.az is a modern news platform built as a monorepo with three apps: a public client site, an admin panel, and a NestJS backend. The platform supports dynamic categories, multilingual content (Azerbaijani/Russian), rich article editing, media uploads, analytics, and SEO-friendly routing. Legacy WordPress URLs are redirected so existing search and bookmark traffic continues to work after migration.",
+    responsibilities: [
+      "Designed and implemented the responsive public UI from scratch, including home feed, category pages, article detail views, hero slider, sidebar navigation, dark/light theme, and mobile-first layout.",
+      "Built the NestJS REST API with Prisma and PostgreSQL (Supabase), including articles CRUD, dynamic categories, dashboard statistics, view tracking, site settings, and JWT-based admin authentication.",
+      "Developed the admin panel with article management, TipTap rich-text editor (images, links, YouTube embeds), Cloudinary media uploads, dashboard with weekly view charts, category CRUD, and social links configuration.",
+      "Implemented legacy URL handling (301 redirects + client-side routes) to preserve SEO from the old WordPress site and prevent blank pages on outdated links.",
+      "Integrated Cloudinary for image storage, DOMPurify for safe HTML rendering, pagination (24 articles per page), and i18n (AZ/RU) across the public site.",
+      "Deployed the client and admin on Vercel and the API on Render, with environment-based configuration and production-ready build pipelines."
+    ],
+    technologies: ["react", "react-router-dom", "typescript", "vite", "dompurify", "nestjs", "prisma", "postgresql", "supabase", "passport-jwt", "bcryptjs", "class-validator", "cloudinary", "@tiptap/react", "@tiptap/starter-kit", "swagger", "vercel", "render"],
+  },
+  {
     title: "A&Z Perfumery",
     imageUrl: "/projects/az.png",
     siteUrl: "https://azperfumery.az/",
