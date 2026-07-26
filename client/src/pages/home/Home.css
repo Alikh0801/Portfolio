@@ -152,13 +152,6 @@
   letter-spacing: -0.04em;
 }
 
-.projectCase__summary {
-  margin: 18px 0 0;
-  max-width: 680px;
-  color: rgba(243, 243, 244, 0.68);
-  line-height: 1.75;
-}
-
 .projectCase__actions {
   display: grid;
   grid-template-columns: repeat(2, max-content);

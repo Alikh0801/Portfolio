@@ -56,7 +56,6 @@ export function Home() {
                       {String(index + 1).padStart(3, "0")}
                     </span>
                     <h3 className="projectCase__title">{p.title}</h3>
-                    <p className="projectCase__summary">{p.description}</p>
                   </div>
 
                   <div className="projectCase__actions">
