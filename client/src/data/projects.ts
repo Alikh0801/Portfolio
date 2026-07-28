@@ -136,7 +136,7 @@ export const projects: Project[] = [
     imageUrl: "#",
     siteUrl: "https://orskin.ae/",
     type: "company",
-    companyName: "Alievs Space",
+    companyName: "1kod.az",
     description:
       "Orskin Clinic is a professional clinic website for a skincare and aesthetic care brand, helping visitors explore treatments, meet the team, and find trusted information before booking.",
     responsibilities: [
