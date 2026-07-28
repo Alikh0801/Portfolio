@@ -14,6 +14,34 @@ export type Project = {
 // Replace these examples with your real projects.
 export const projects: Project[] = [
   {
+    title: "Myroom",
+    imageUrl: "#",
+    siteUrl: "https://myroom.az/",
+    type: "personal",
+    description:
+      "MyRoom is a short-term rental and vacation listings platform for Azerbaijan. Hosts can publish and manage listings for hotels, hostels, A-frames, and countryside homes, while guests can search, filter, and contact owners directly via WhatsApp or phone.",
+    responsibilities: [
+      "Listing platform & search — Built the full listing flow: create/edit listings, image uploads, category and amenity support, and search with filters (region, category, price, guest count).",
+      "Owner profiles — Implemented public profile pages for listing owners so users can view all active listings from the same host by clicking the owner name on a listing detail page.",
+      "Admin moderation panel — Developed an admin dashboard for approving/rejecting listings, managing VIP promotions, and handling payment receipt verification.",
+      "Internationalization & UX — Added Azerbaijani and Russian support with next-intl, dark/light theme, favorites, responsive listing cards, and map integration for property locations.",
+      "Auth & backend security — Set up Supabase authentication, Row Level Security policies, rate limiting, and secure S3 image uploads with presigned URLs.",
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "next-intl",
+      "AWS S3",
+      "Leaflet",
+      "Upstash Redis",
+      "Cloudflare Turnstile",
+      "Server Actions",
+    ],
+  },
+  {
     title: "Repost.az",
     imageUrl: "#",
     siteUrl: "https://repost.az/",
