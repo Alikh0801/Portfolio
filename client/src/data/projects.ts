@@ -16,7 +16,7 @@ export const projects: Project[] = [
   {
     title: "Myroom",
     imageUrl: "#",
-    siteUrl: "https://myroom.az/",
+    siteUrl: "https://myroomaz.com/",
     type: "personal",
     description:
       "MyRoom is a short-term rental and vacation listings platform for Azerbaijan. Hosts can publish and manage listings for hotels, hostels, A-frames, and countryside homes, while guests can search, filter, and contact owners directly via WhatsApp or phone.",
