@@ -86,6 +86,7 @@ export const education: Education[] = [
 
 export const skills: Skill[] = [
   { name: "React", level: 95 },
+  { name: "Next.js", level: 90 },
   { name: "React Native", level: 85 },
   { name: "Redux Toolkit", level: 80 },
   { name: "Node.js / Express", level: 85 },
