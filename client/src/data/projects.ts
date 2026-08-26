@@ -14,6 +14,32 @@ export type Project = {
 // Replace these examples with your real projects.
 export const projects: Project[] = [
   {
+    title: "Barakatly",
+    imageUrl: "#",
+    siteUrl: "https://barakatly.az/",
+    type: "personal",
+    description:
+      "Barakatly is a farmer-to-consumer marketplace platform for Azerbaijan. Local farmers list fresh produce directly, customers browse by category, farmer, or price and place orders, while a dedicated courier network handles delivery — cutting out middlemen between farm and table.",
+    responsibilities: [
+      "Marketplace & checkout — Built the full shopping flow: category/farmer/price-range filters, cart, multi-vendor order splitting (a single order can contain items from several farmers, each tracked independently), and bank-transfer checkout with receipt upload + admin payment confirmation.",
+      "Order lifecycle & courier logistics — Designed the end-to-end order pipeline (confirmed → farmer accepted → preparing → awaiting courier → picked up → delivered) with atomic stock reservation to prevent overselling, cancellation cascades that restore inventory automatically, and a per-courier claim system enforced at the database level (RLS) so two couriers can never double-book the same delivery.",
+      "Multi-role admin panel — Built the admin dashboard for reviewing farmer applications, approving products/categories, confirming payments, managing couriers, and moderating the marketplace end-to-end.",
+      "Farmer & customer experience — Public farmer profile pages with followers and blog-style posts, an in-app + Telegram notification system, product image galleries with swipe/lightbox support, and admin-editable homepage/sign-in page content.",
+      "Auth & backend security — Supabase-based auth (email/password, Google OAuth, OTP-verified signup with Cloudflare Turnstile bot protection), with row-level security policies scoping every table to the correct role (customer/farmer/courier/admin), plus Supabase Storage for product, receipt, and avatar uploads.",
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Cloudflare Turnstile",
+      "Telegram Bot API",
+      "Vercel",
+    ],
+  },
+  {
     title: "Myroom",
     imageUrl: "#",
     siteUrl: "https://myroomaz.com/",
