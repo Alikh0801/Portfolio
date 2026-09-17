@@ -43,7 +43,7 @@ export function Home() {
             </span>
             <h2 className="home__title">Projects</h2>
             <p className="home__text">
-              I am presenting to you my personal and company-internal work.
+              I am presenting to you a selection of my work.
             </p>
           </div>
 
@@ -59,20 +59,6 @@ export function Home() {
                   </div>
 
                   <div className="projectCase__actions">
-                    <span
-                      className={`projectCase__badge ${
-                        p.type === "company"
-                          ? "projectCase__badge--company"
-                          : "projectCase__badge--personal"
-                      }`}
-                    >
-                      {p.type === "company" ? "Company" : "Personal"}
-                    </span>
-                    {p.type === "company" && p.companyName && (
-                      <span className="projectCase__company">
-                        {p.companyName}
-                      </span>
-                    )}
                     <a
                       className="projectCase__link"
                       href={p.siteUrl}

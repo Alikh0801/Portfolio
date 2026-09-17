@@ -1,11 +1,7 @@
-export type ProjectType = "company" | "personal";
-
 export type Project = {
   title: string;
   imageUrl: string;
   siteUrl: string;
-  type: "company" | "personal";
-  companyName?: string;
   technologies: string[];
   description: string;
   responsibilities: string[];
@@ -17,7 +13,6 @@ export const projects: Project[] = [
     title: "Barakatly",
     imageUrl: "#",
     siteUrl: "https://barakatly.az/",
-    type: "personal",
     description:
       "Barakatly is a farmer-to-consumer marketplace platform for Azerbaijan. Local farmers list fresh produce directly, customers browse by category, farmer, or price and place orders, while a dedicated courier network handles delivery — cutting out middlemen between farm and table.",
     responsibilities: [
@@ -43,7 +38,6 @@ export const projects: Project[] = [
     title: "Myroom",
     imageUrl: "#",
     siteUrl: "https://myroomaz.com/",
-    type: "personal",
     description:
       "MyRoom is a short-term rental and vacation listings platform for Azerbaijan. Hosts can publish and manage listings for hotels, hostels, A-frames, and countryside homes, while guests can search, filter, and contact owners directly via WhatsApp or phone.",
     responsibilities: [
@@ -71,7 +65,6 @@ export const projects: Project[] = [
     title: "Repost.az",
     imageUrl: "#",
     siteUrl: "https://repost.az/",
-    type: "personal",
     description:
       "RePost.az is a modern news platform built as a monorepo with three apps: a public client site, an admin panel, and a NestJS backend. The platform supports dynamic categories, multilingual content (Azerbaijani/Russian), rich article editing, media uploads, analytics, and SEO-friendly routing. Legacy WordPress URLs are redirected so existing search and bookmark traffic continues to work after migration.",
     responsibilities: [
@@ -88,7 +81,6 @@ export const projects: Project[] = [
     title: "A&Z Perfumery",
     imageUrl: "/projects/az.png",
     siteUrl: "https://azperfumery.az/",
-    type: "personal",
     description:
       "A&Z Perfumery is a full‑stack perfume e‑commerce web app for browsing products and viewing detailed listings.",
     responsibilities: [
@@ -126,8 +118,6 @@ export const projects: Project[] = [
     title: "Wolfservice",
     imageUrl: "/projects/wolf.png",
     siteUrl: "https://wolfhibridservice.com/",
-    type: "company",
-    companyName: "Alievs Space",
     description:
       "Wolfservice is a multilingual Slovak car repair platform with public booking and an integrated admin dashboard.",
     responsibilities: [
@@ -150,8 +140,6 @@ export const projects: Project[] = [
     title: "TuranSK Logistics",
     imageUrl: "/projects/turansk.png",
     siteUrl: "https://turansk.com/en",
-    type: "company",
-    companyName: "Alievs Space",
     description:
       "A comprehensive web platform for a leading European logistics service provider, designed to streamline international shipping operations and cargo management.",
     responsibilities: [
@@ -167,8 +155,6 @@ export const projects: Project[] = [
     title: "Dabi Cars",
     imageUrl: "#",
     siteUrl: "https://dabicars.com/",
-    type: "company",
-    companyName: "Alievs Space",
     description:
       "Dabi Cars is a rent-a-car web platform where users can browse available vehicles, compare options, and explore rental details through a clean, modern interface.",
     responsibilities: [
@@ -189,8 +175,6 @@ export const projects: Project[] = [
     title: "Orskin Clinic",
     imageUrl: "#",
     siteUrl: "https://orskin.ae/",
-    type: "company",
-    companyName: "1kod.az",
     description:
       "Orskin Clinic is a professional clinic website for a skincare and aesthetic care brand, helping visitors explore treatments, meet the team, and find trusted information before booking.",
     responsibilities: [

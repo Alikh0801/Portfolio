@@ -153,49 +153,19 @@
 }
 
 .projectCase__actions {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  justify-items: end;
-  justify-content: end;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
   flex: 0 0 auto;
-  min-width: 170px;
 }
 
-.projectCase__badge,
-.projectCase__company,
 .projectCase__link {
   border-radius: 999px;
   font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.04em;
   white-space: nowrap;
-}
-
-.projectCase__badge {
-  padding: 8px 14px;
-  border: 1px solid rgba(255, 122, 26, 0.34);
-  color: rgba(255, 184, 118, 0.96);
-  background: rgba(255, 122, 26, 0.1);
-}
-
-.projectCase__badge--personal {
-  border-color: rgba(255, 255, 255, 0.12);
-  color: rgba(243, 243, 244, 0.86);
-  background: rgba(255, 255, 255, 0.055);
-}
-
-.projectCase__company {
-  padding: 7px 12px;
-  color: rgba(243, 243, 244, 0.62);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(11, 11, 12, 0.32);
-}
-
-.projectCase__link {
-  grid-column: 1;
-  justify-self: start;
   text-decoration: none;
   padding: 9px 13px;
   color: var(--text);
@@ -318,10 +288,7 @@
   }
 
   .projectCase__actions {
-    justify-items: start;
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 0;
+    justify-content: flex-start;
   }
 }
 
