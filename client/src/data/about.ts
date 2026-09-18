@@ -89,6 +89,7 @@ export const skills: Skill[] = [
   { name: "Next.js", level: 90 },
   { name: "React Native", level: 85 },
   { name: "Redux Toolkit", level: 80 },
+  { name: "Python", level: 60},
   { name: "Node.js / Express", level: 85 },
   { name: "NestJs", level: 80 },
   { name: "TypeScript", level: 75 },
