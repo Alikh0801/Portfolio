@@ -10,6 +10,38 @@ export type Project = {
 // Replace these examples with your real projects.
 export const projects: Project[] = [
   {
+    title: "Flare",
+    imageUrl: "#",
+    siteUrl: "https://flareaz.app/",
+    description:
+      "Flare is an on-demand roadside assistance marketplace for Azerbaijan. A driver who breaks down posts what is wrong and where; nearby mobile mechanics bid with their own price; the driver picks one and watches them approach on a live map. Jobs are paid by card or cash, and the platform takes its commission from the mechanic — never as a surcharge on the driver.",
+    responsibilities: [
+      "Realtime marketplace & live tracking — Built the full request flow end to end: geo-matched dispatch to nearby mechanics filtered by service type, competing price offers, acceptance, a four-digit pickup code verified at the car, and live location tracking streamed over Supabase Realtime.",
+      "Payments & commission ledger — Integrated a Central Bank-licensed acquirer for saved-card payments: tokenised card registration, charge, refund, and signature-verified server-to-server callbacks. Designed the commission ledger that settles with mechanics every three completed jobs, including automatic refunds on cancelled jobs and a cancellation fee that still pays a mechanic who had already set off.",
+      "Database design & security — Designed the PostgreSQL/PostGIS schema across 50+ migrations. Row Level Security on every table; all money-moving logic lives in SECURITY DEFINER functions revoked from client roles and callable only by the service role, so no balance can be written from a phone.",
+      "Cross-role mobile app (iOS/Android) — Shipped both sides of the marketplace in a single React Native app: separate driver and mechanic navigation stacks, push notifications, vehicle management, ratings, an earnings dashboard, and account deletion that anonymises completed order history instead of destroying the financial record.",
+      "Company, compliance & public site — Registered the company and negotiated the acquiring contract; wrote the terms of service, privacy policy and mechanic agreement; built and deployed the marketing site with its payment return pages, plus a brand system generated from a single geometry source so the app icon, favicons and logo can never drift apart.",
+    ],
+    technologies: [
+      "React Native",
+      "Expo SDK 57",
+      "TypeScript",
+      "React Navigation",
+      "Supabase",
+      "PostgreSQL",
+      "PostGIS",
+      "Row Level Security",
+      "Supabase Realtime",
+      "Edge Functions (Deno)",
+      "Card payments (PCI-compliant acquirer)",
+      "Expo Notifications (FCM)",
+      "Leaflet",
+      "OpenStreetMap",
+      "EAS Build",
+      "Vercel",
+    ],
+  },
+  {
     title: "Barakatly",
     imageUrl: "#",
     siteUrl: "https://barakatly.az/",
