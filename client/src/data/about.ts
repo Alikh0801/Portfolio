@@ -29,7 +29,6 @@ export type AboutProfile = {
   role: string;
   location: string;
   experience: string;
-  status: string;
 };
 
 export const aboutProfile: AboutProfile = {
@@ -39,7 +38,6 @@ export const aboutProfile: AboutProfile = {
   role: "Full-stack & Mobile Developer",
   location: "Baku, Azerbaijan",
   experience: "4+ years",
-  status: "Open to work",
 };
 
 export const experiences: Experience[] = [

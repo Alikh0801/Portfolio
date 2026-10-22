@@ -40,10 +40,6 @@ export function Hero() {
             <span className="hero__metaLabel">Based in</span>
             <span className="hero__metaValue">Baku, AZ</span>
           </li>
-          <li>
-            <span className="hero__metaLabel">Status</span>
-            <span className="hero__metaValue">Open to work</span>
-          </li>
         </ul>
       </div>
     </section>

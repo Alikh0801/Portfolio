@@ -224,12 +224,6 @@ export function Home() {
                     <dt>Experience</dt>
                     <dd>{aboutProfile.experience}</dd>
                   </div>
-                  <div className="profileCard__row">
-                    <dt>Status</dt>
-                    <dd className="profileCard__status">
-                      {aboutProfile.status}
-                    </dd>
-                  </div>
                 </dl>
               </div>
 
