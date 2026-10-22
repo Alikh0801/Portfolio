@@ -36,15 +36,21 @@ export const aboutProfile: AboutProfile = {
   initials: "AK",
   avatarUrl: "/profile/me1.png",
   name: "Ali Kheirkheberli",
-  role: "Full-stack Developer",
+  role: "Full-stack & Mobile Developer",
   location: "Baku, Azerbaijan",
-  experience: "2+ years",
+  experience: "4+ years",
   status: "Open to work",
 };
 
 export const experiences: Experience[] = [
   {
-    period: "2026.01 — Present",
+    period: "2026.09 — Present",
+    role: "Founder / Product Engineer",
+    company: "Flare (FlareApp)",
+    description: "On-demand roadside assistance marketplace.",
+  },
+  {
+    period: "2026.01 — 2026.05",
     role: "Frontend Developer",
     company: "Alievs Space",
     description:
